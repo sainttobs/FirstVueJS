@@ -21,6 +21,12 @@
 		<label>Your Name</label>		
 		<input type="text" v-model="yName" name="" placeholder="Enter Your Name Here">
 		<span>{{yName}}</span>
+		<!-- Computed Properties-->
+		<h1>Computed Properties</h1>
+		<button @click="a++">Add To A</button>
+		<button @click="b++">Add To B</button>
+		<p> Age + a = {{addToA}}</p>
+		<p> Age + b = {{addToB}}</p>
 		<!-- Data Binding -->
 		<h1>Data Binding</h1>
 		<!-- Binding a link to a text -->
