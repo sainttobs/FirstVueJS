@@ -16,6 +16,11 @@
 		<label>Age: </label>
 		<!-- Using the modifier "alt+enter" on a keyup event -->
 		<input type="text" @keyup.alt.enter="logAge" name="">
+		<!-- Two way data binding -->
+		<h1>Two Way Data-Binding</h1>
+		<label>Your Name</label>		
+		<input type="text" v-model="yName" name="" placeholder="Enter Your Name Here">
+		<span>{{yName}}</span>
 		<!-- Data Binding -->
 		<h1>Data Binding</h1>
 		<!-- Binding a link to a text -->

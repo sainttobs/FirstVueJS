@@ -8,7 +8,8 @@ new Vue({
 		websiteTag: '<a href="http://www.9jatechguru.com.ng">9jatechguru Blog </a>',
 		age: 19,
 		x: 0,
-		y: 0
+		y: 0,
+		yName: ""
 	},
 	methods: {
 		greet : function (time) {
