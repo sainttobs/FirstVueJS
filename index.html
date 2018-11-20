@@ -8,9 +8,20 @@
 </head>
 <body>
 	<div id="vue-app">
+		<!-- KeyBoard Events-->
+		<h1>Keyboard Events</h1>
+		<label>Name: </label>
+		<!-- USing the modifier "enter" on a keyup event -->
+		<input type="text" @keyup.enter="logName" name="">
+		<label>Age: </label>
+		<!-- Using the modifier "alt+enter" on a keyup event -->
+		<input type="text" @keyup.alt.enter="logAge" name="">
+		<!-- Data Binding -->
 		<h1>Data Binding</h1>
+		<!-- Binding a link to a text -->
 		<a v-bind:href="website">9jatechguru</a>
 		<input type="text" name="job" v-bind:value="job">
+		<!-- Adding Html with vue -->
 		<p v-html="websiteTag"></p>
 		<button @click.once="add(1)">Increase Age By 1</button>
 		<button v-on:click="subtract(1)">Decreade age by 1</button>
